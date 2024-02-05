@@ -1,0 +1,115 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #8a2be2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+
+.first-box {
+    width: 30vw;
+    min-width: 300px;
+    height: 25vh; 
+    background-color: #ffe4c4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+}
+
+.second-box {
+    width: 30vw;
+    min-width: 300px; 
+    height: auto; 
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 25px; 
+}
+
+.button {
+    width: 150px; 
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    color: black;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#artist, #song {
+    padding: 10px;
+    width: 95%; 
+    margin: 10px;
+    border-radius: 10px;
+    color: brown;
+    border: 0px;
+    outline: 0;
+    display: block;
+    font-weight: bold;
+}
+
+#song-list li {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin: 30px;
+}
+
+.nav-bar img {
+    position: relative;
+    bottom: 10px;
+}
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        align-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-box, .second-box {
+        width: 60vw; 
+    }
+    h1{
+        margin-left: 10px;
+        text-align: center;
+    }
+}

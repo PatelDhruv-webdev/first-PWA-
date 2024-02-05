@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8a2be2">
+    <link rel="apple-touch-icon" href="assets/google-music-icon-3.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="My App" />
+    <title>My Music Application</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <main>
+        <div class="nav-bar">
+            <img src="assets/google-music-icon-3.png" width="50px" alt="Logo" >
+            <h1>MY MUSIC APPLICATION</h1>
+        </div>
+        <div class="container">
+            <div class="first-box">
+                <form id="song-form">
+                    <input type="text" id="song" placeholder="Enter song name!">
+                    <span id="songError" class="error"></span>
+                    <input type="text" id="artist" placeholder="Enter artist name!" >
+                    <span id="artistError" class="error"></span>
+                    <button class="button" type="submit">ADD</button>
+                    
+                </form>
+            </div>
+            <div class="second-box">
+                <div class="answer">
+                    <ul id="song-list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
